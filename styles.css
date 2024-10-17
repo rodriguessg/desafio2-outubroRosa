@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --cor-prinicipal: #FF69B4;
+    --cor-secundaria: #FFD9EC;
+    --cor-texto: #E4EEF1;
+
+    --font-size-principal:24px;
+    --font-size-textos:25px;
+}
+body {
+    line-height: 1.6;
+    background: var(--cor-secundaria);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+    background: var(--cor-prinicipal);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: var(--cor-secundaria);
+}
+
+nav ul {
+    display: flex;
+    gap: 120px;
+    
+}
+li {
+    text-decoration-style: none;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 16px;
+    
+}
+.text {
+    font-size: var(--font-size-textos);
+    color: var(--cor-texto);
+}
+.section-one, .section-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.section-one .text, .section-two .text {
+    max-width: 50%;
+}
+
+.section-one .image, .section-two .image {
+    max-width: 40%;
+}
+
+.section-two {
+    background-color:var(--cor-prinicipal);
+    color: white;
+}
+
+.section-three {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--cor-secundaria);
+}
+
+.section-three img {
+    width: 30%;
+    /* border: 2px solid pink; */
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor-prinicipal);
+
+}
+
+.logo_rede_social {
+    width: 67px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.instructor-info ul,li {
+    list-style: none;
+}
+
+.footer-logo img {
+    width: 105px;
+}
+
