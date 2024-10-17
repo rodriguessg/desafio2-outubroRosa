@@ -9,8 +9,8 @@
     --cor-secundaria: #FFD9EC;
     --cor-texto: #E4EEF1;
 
-    --font-size-principal:24px;
-    --font-size-textos:25px;
+    --font-size-principal: 24px;
+    --font-size-textos: 25px;
 }
 body {
     line-height: 1.6;
@@ -36,22 +36,22 @@ header {
 nav ul {
     display: flex;
     gap: 120px;
-    
 }
 li {
-    text-decoration-style: none;
+    text-decoration: none;
     text-align: center;
 }
 nav a {
     text-decoration: none;
     color: var(--cor-texto);
     font-size: 16px;
-    
 }
+
 .text {
     font-size: var(--font-size-textos);
     color: var(--cor-texto);
 }
+
 .section-one, .section-two {
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ nav a {
 }
 
 .section-two {
-    background-color:var(--cor-prinicipal);
+    background-color: var(--cor-prinicipal);
     color: white;
 }
 
@@ -81,7 +81,6 @@ nav a {
 
 .section-three img {
     width: 30%;
-    /* border: 2px solid pink; */
     padding: 10px;
 }
 
@@ -91,7 +90,6 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: var(--cor-prinicipal);
-
 }
 
 .logo_rede_social {
@@ -104,7 +102,7 @@ footer {
     margin-right: 10px;
 }
 
-.instructor-info ul,li {
+.instructor-info ul, li {
     list-style: none;
 }
 
@@ -112,3 +110,53 @@ footer {
     width: 105px;
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .section-one, .section-two {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-one .text, .section-two .text, 
+    .section-one .image, .section-two .image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-three {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-three img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-bottom: 15px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+        margin-top: 15px;
+    }
+}
